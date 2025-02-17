@@ -54,7 +54,7 @@ fn body_m() -> Markup {
              section id="tools"{
                  header{
                         h1{"Job Seeking Tools"}
-                        p{"For dear friend"}
+                        p{"For a dear friend"}
                  }
 
 
