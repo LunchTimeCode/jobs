@@ -1,0 +1,11 @@
+[package]
+name = "jobs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Silen Locatelli"]
+
+[dependencies]
+rocket ={version = "0.5.0"}
+maud = {version = "0.26"}
+static_hero_icons = "0.3.0"
+include_directory = "0.1.1"
