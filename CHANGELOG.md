@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/LunchTimeCode/jobs/compare/v0.1.1...v0.1.2) (2025-02-17)
+
+
+### Bug Fixes
+
+* docker build ([9f6c29a](https://github.com/LunchTimeCode/jobs/commit/9f6c29a6700aeccfb008b709d7f271c398049568))
+
 ## [0.1.1](https://github.com/LunchTimeCode/jobs/compare/v0.1.0...v0.1.1) (2025-02-17)
 
 
