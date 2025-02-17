@@ -12,7 +12,7 @@ RUN cargo build --release
 FROM debian:bookworm-slim
 
 # Copy the build artifact from the build stage
-COPY --from=builder /usr/src/app/target/release/me /usr/local/bin/
+COPY --from=builder /usr/src/app/target/release/jobs /usr/local/bin/
 
 # Set the startup command
 CMD ["jobs"]
