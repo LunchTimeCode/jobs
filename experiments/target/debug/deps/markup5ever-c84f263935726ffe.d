@@ -1,0 +1,15 @@
+/home/silen/proj/jobs/experiments/target/debug/deps/libmarkup5ever-c84f263935726ffe.rmeta: /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/lib.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/data/mod.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/interface/mod.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/interface/tree_builder.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/serialize.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/util/buffer_queue.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/util/smallcharset.rs /home/silen/proj/jobs/experiments/target/debug/build/markup5ever-378d2bcd2a13be9b/out/generated.rs /home/silen/proj/jobs/experiments/target/debug/build/markup5ever-378d2bcd2a13be9b/out/named_entities.rs
+
+/home/silen/proj/jobs/experiments/target/debug/deps/markup5ever-c84f263935726ffe.d: /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/lib.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/data/mod.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/interface/mod.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/interface/tree_builder.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/serialize.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/util/buffer_queue.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/util/smallcharset.rs /home/silen/proj/jobs/experiments/target/debug/build/markup5ever-378d2bcd2a13be9b/out/generated.rs /home/silen/proj/jobs/experiments/target/debug/build/markup5ever-378d2bcd2a13be9b/out/named_entities.rs
+
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/lib.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/data/mod.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/interface/mod.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/interface/tree_builder.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/serialize.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/util/buffer_queue.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/markup5ever-0.14.1/util/smallcharset.rs:
+/home/silen/proj/jobs/experiments/target/debug/build/markup5ever-378d2bcd2a13be9b/out/generated.rs:
+/home/silen/proj/jobs/experiments/target/debug/build/markup5ever-378d2bcd2a13be9b/out/named_entities.rs:
+
+# env-dep:OUT_DIR=/home/silen/proj/jobs/experiments/target/debug/build/markup5ever-378d2bcd2a13be9b/out
