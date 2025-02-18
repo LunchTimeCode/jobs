@@ -6,6 +6,7 @@ use rocket::{Build, Rocket};
 extern crate rocket;
 
 mod assets;
+mod extractor;
 mod view;
 
 #[launch]
