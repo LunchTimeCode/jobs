@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/LunchTimeCode/jobs/compare/v0.1.2...v0.2.0) (2025-02-20)
+
+
+### Features
+
+* date extractor ([004ce84](https://github.com/LunchTimeCode/jobs/commit/004ce846eb51cc5584440dae6fe8026908482ce2))
+
 ## [0.1.2](https://github.com/LunchTimeCode/jobs/compare/v0.1.1...v0.1.2) (2025-02-17)
 
 
