@@ -1,5 +1,7 @@
 use maud::{html, Markup};
-use rocket::{response::content, Route};
+use rocket::{form::Form, response::content, Route};
+
+use crate::extractor;
 
 pub fn page(markup: Markup) -> Markup {
     html! {
@@ -51,6 +53,8 @@ fn body_m() -> Markup {
     body {
          header {
              (navigation())
+         }
+         main id="main_target"{
              section id="tools"{
                  header{
                         h1{"Job Seeking Tools"}
@@ -75,10 +79,6 @@ fn body_m() -> Markup {
              }
 
          }
-         main{
-
-
-         }
 
         }
     }
@@ -86,6 +86,7 @@ fn body_m() -> Markup {
 
 pub fn tool(img: &str, title: &str, description: &str, link: &str, link_text: &str) -> Markup {
     let img = format!("/_assets/{}", img);
+    let link = format!("/{}", link);
     html! {
         aside {
             img alt="HTML only" src=(img) height="150";
@@ -96,7 +97,7 @@ pub fn tool(img: &str, title: &str, description: &str, link: &str, link_text: &s
                 ({description})
             }
             p {
-                a href= (link) {
+                a hx-target="#main_target" hx-trigger="click" hx-get=(link) {
                     em {
                         ({link_text})
                     }
@@ -137,6 +138,79 @@ pub fn navigation() -> Markup {
     }
 }
 
+#[get("/extractor")]
+pub fn extractor_route() -> content::RawHtml<String> {
+    content::RawHtml(extractor_view().into_string())
+}
+
+pub fn extractor_view() -> Markup {
+    html! {
+        form hx-post="/extract" hx-target="#extracted" {
+            input type="text" name="url" placeholder="URL" required="true";
+            button type="submit" {
+                "Extract Dates"
+            }
+        }
+        div id="extracted" {
+
+        }
+    }
+}
+
+#[derive(FromForm)]
+pub struct UrlInput {
+    // The raw, undecoded value. You _probably_ want `String` instead.
+    url: String,
+}
+
+#[post("/extract", data = "<url_input>")]
+pub async fn extract_route(url_input: Form<UrlInput>) -> content::RawHtml<String> {
+    let dates = extractor::extract_dates(&url_input.url).await;
+    content::RawHtml(extract(dates).into_string())
+}
+
+pub fn extract(dates: Vec<extractor::datefinder::Date>) -> Markup {
+    let date_views = dates
+        .iter()
+        .map(|d| date_view(d.clone()))
+        .collect::<Vec<Markup>>();
+    html! {
+        section{
+            h1{"Dates"}
+            ul{
+                @for date_view in date_views {
+                    li{
+                        ({date_view})
+                    }
+                }
+            }
+        }
+    }
+}
+
+pub fn date_view(date: extractor::datefinder::Date) -> Markup {
+    let line = extractor::datefinder::format_line(date.line(), date.value().to_string());
+
+    html! {
+        section{
+                p {
+                    "Date: "({date.value()})
+                }
+                p {
+                   "Position in html: " ({date.index()})
+                }
+                section{
+                    h2{"Context"}
+                    p {
+                        (line)
+                    }
+                }
+        }
+
+
+    }
+}
+
 pub fn api() -> (&'static str, Vec<Route>) {
-    ("/", routes![body,])
+    ("/", routes![body, extractor_route, extract_route])
 }

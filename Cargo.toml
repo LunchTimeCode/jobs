@@ -10,3 +10,4 @@ maud = {version = "0.26"}
 static_hero_icons = "0.3.0"
 include_directory = "0.1.1"
 regex = "1.11.1"
+reqwest = "0.12.12"
