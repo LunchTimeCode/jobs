@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/LunchTimeCode/jobs/compare/v0.2.0...v0.2.1) (2025-02-21)
+
+
+### Bug Fixes
+
+* docker ([ee40d3b](https://github.com/LunchTimeCode/jobs/commit/ee40d3b27910989f98fb3a62b4d6136672bec2cf))
+* tls ([43cd9b2](https://github.com/LunchTimeCode/jobs/commit/43cd9b2821be31e4b7472f46daa7ac69259890b6))
+
 ## [0.2.0](https://github.com/LunchTimeCode/jobs/compare/v0.1.2...v0.2.0) (2025-02-20)
 
 
