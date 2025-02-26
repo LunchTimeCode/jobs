@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/LunchTimeCode/jobs/compare/v0.2.1...v0.2.2) (2025-02-26)
+
+
+### Bug Fixes
+
+* length and view ([2640426](https://github.com/LunchTimeCode/jobs/commit/2640426a04248d742765cdde55858788c8a0b14d))
+
 ## [0.2.1](https://github.com/LunchTimeCode/jobs/compare/v0.2.0...v0.2.1) (2025-02-21)
 
 
