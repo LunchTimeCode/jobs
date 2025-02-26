@@ -41,7 +41,7 @@ pub fn format_line(line: &str, date: String) -> String {
     let before_ten = &before
         .chars()
         .rev()
-        .take(15)
+        .take(20)
         .collect::<String>()
         .chars()
         .rev()

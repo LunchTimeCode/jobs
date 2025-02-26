@@ -22,7 +22,9 @@ fn rocket() -> _ {
 fn mount(rocket: Rocket<Build>) -> Rocket<Build> {
     let (assets_path, asset_routes) = assets::api();
     let (body_path, body_routes) = view::api();
+    let (extractor_path, extractor_routes) = view::ex_api();
     rocket
         .mount(assets_path, asset_routes)
         .mount(body_path, body_routes)
+        .mount(extractor_path, extractor_routes)
 }
