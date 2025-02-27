@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/LunchTimeCode/jobs/compare/v0.2.2...v0.3.0) (2025-02-27)
+
+
+### Features
+
+* more regexes ([9695a43](https://github.com/LunchTimeCode/jobs/commit/9695a4336b6d91f5d228873725b3b32d5d7bfa02))
+
+
+### Bug Fixes
+
+* remove tracker app ([cbfdab1](https://github.com/LunchTimeCode/jobs/commit/cbfdab1d02c1963e4c6d171ff7cb616cdcd66f27))
+
 ## [0.2.2](https://github.com/LunchTimeCode/jobs/compare/v0.2.1...v0.2.2) (2025-02-26)
 
 
