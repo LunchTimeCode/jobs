@@ -4,9 +4,10 @@ pub fn regexes() -> Vec<regex::Regex> {
     vec![
         regex::Regex::new(r"\d{4}-\d{2}-\d{2}").unwrap(),
         regex::Regex::new(r"\d{4}/\d{2}/\d{2}").unwrap(),
-        regex::Regex::new(r"\d{4}-\d{2}-\d{2}").unwrap(),
-        regex::Regex::new(r"\d{4}/\d{2}/\d{2}").unwrap(),
-        regex::Regex::new(r"\d{4}-\d{2}-\d{2}").unwrap(),
+        regex::Regex::new(r"\d{4}.\d{2}.\d{2}").unwrap(),
+        regex::Regex::new(r"\d{2}-\d{2}-\d{4}").unwrap(),
+        regex::Regex::new(r"\d{2}/\d{2}/\d{4}").unwrap(),
+        regex::Regex::new(r"\d{2}.\d{2}.\d{4}").unwrap(),
     ]
 }
 
