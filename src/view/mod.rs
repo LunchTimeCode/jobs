@@ -71,13 +71,6 @@ fn body_m() -> Markup {
                         "extractor",
                         "Extracter Tool"
                  ))
-                 (tool(
-                        "track.svg",
-                        "Tracker",
-                        "Track what matters",
-                        "tracker",
-                        "Tracker Tool"
-                 ))
              }
 
          }
