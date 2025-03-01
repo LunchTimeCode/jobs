@@ -3,10 +3,11 @@ use rocket::response::content;
 
 pub fn extractor_view() -> Markup {
     html! {
+
         form hx-post="/extractor/extract" hx-target="#extracted" {
             input type="text" name="url" placeholder="URL" required="true";
             button type="submit" {
-                "Extract Dates"
+                "Extract Dates and Text"
             }
         }
         div id="extracted" {

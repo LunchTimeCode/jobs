@@ -1,5 +1,7 @@
 use std::fmt::Display;
 
+use serde::{Deserialize, Serialize};
+
 pub fn regexes() -> Vec<regex::Regex> {
     vec![
         regex::Regex::new(r"\d{4}-\d{2}-\d{2}").unwrap(),
@@ -11,7 +13,7 @@ pub fn regexes() -> Vec<regex::Regex> {
     ]
 }
 
-#[derive(Debug, Clone, PartialEq, PartialOrd, Eq, Ord)]
+#[derive(Debug, Clone, PartialEq, PartialOrd, Eq, Ord, Serialize, Deserialize)]
 pub struct Date {
     value: String,
     index: usize,

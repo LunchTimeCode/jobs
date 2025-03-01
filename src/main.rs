@@ -1,5 +1,6 @@
 use std::env;
 
+use rocket::State;
 use rocket::{Build, Rocket};
 
 #[macro_use]
@@ -7,6 +8,7 @@ extern crate rocket;
 
 mod assets;
 mod extractor;
+mod state;
 mod view;
 
 #[launch]
@@ -19,12 +21,16 @@ fn rocket() -> _ {
     mount(rocket)
 }
 
+pub type ServerState = State<state::_State>;
+
 fn mount(rocket: Rocket<Build>) -> Rocket<Build> {
     let (assets_path, asset_routes) = assets::api();
     let (body_path, body_routes) = view::api();
     let (extractor_path, extractor_routes) = view::ex_api();
+    let state = state::initial_state();
     rocket
         .mount(assets_path, asset_routes)
         .mount(body_path, body_routes)
         .mount(extractor_path, extractor_routes)
+        .manage(state)
 }
