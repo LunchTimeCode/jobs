@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/LunchTimeCode/jobs/compare/v0.3.0...v0.4.0) (2025-03-01)
+
+
+### Features
+
+* report and sentences ([e139db7](https://github.com/LunchTimeCode/jobs/commit/e139db7c625e3599b8b92cd09b9aa189dcb50870))
+
 ## [0.3.0](https://github.com/LunchTimeCode/jobs/compare/v0.2.2...v0.3.0) (2025-02-27)
 
 
