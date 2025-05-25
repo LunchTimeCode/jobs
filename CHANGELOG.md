@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/LunchTimeCode/jobs/compare/v0.4.0...v0.5.0) (2025-05-25)
+
+
+### Features
+
+* new ai endpoint ([4b895a3](https://github.com/LunchTimeCode/jobs/commit/4b895a3977122e3f693c7c2a48976da3371481b2))
+
 ## [0.4.0](https://github.com/LunchTimeCode/jobs/compare/v0.3.0...v0.4.0) (2025-03-01)
 
 
