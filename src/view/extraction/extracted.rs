@@ -6,6 +6,20 @@ use crate::{
     ServerState,
 };
 
+#[get("/ai?<url>")]
+pub async fn for_ai(url: String, state: &ServerState) -> String {
+    let mut url = url;
+    let without_slash = url.split_off(0);
+
+    let mut state = state.get().await;
+    let html = state.get_html(&without_slash).await;
+
+    let matches = extractor::extract(html).await;
+    let report = extractor::generate_markdown_report(&matches);
+
+    rocket::response::content::RawText(report).0
+}
+
 #[derive(FromForm)]
 pub struct UrlInput {
     // The raw, undecoded value. You _probably_ want `String` instead.

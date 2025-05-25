@@ -129,5 +129,5 @@ pub fn navigation() -> Markup {
 }
 
 pub fn api() -> (&'static str, Vec<Route>) {
-    ("/", routes![body])
+    ("/", routes![body, extraction::extracted::for_ai])
 }

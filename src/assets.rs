@@ -7,7 +7,7 @@ fn assets(asset: &str) -> (ContentType, Vec<u8>) {
     let file = read_any_file(asset);
     let bytes = file.contents();
 
-    let file_type = asset.split('.').last().unwrap();
+    let file_type = asset.split('.').next_back().unwrap();
 
     let ct: ContentType = match file_type {
         "js" => ContentType::JavaScript,
