@@ -1,5 +1,5 @@
 # Build stage
-FROM rust:1.88-slim as builder
+FROM rust:1.94-slim as builder
 
 # Create a new empty shell project
 WORKDIR /usr/src/app
